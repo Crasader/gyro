@@ -7,7 +7,7 @@ object ExchangeBackendServer extends App {
 
   val iface = new ExchangeBackendService()
 
-  val server = ThriftMux.serveIface("192.168.0.104:8080", iface)
+  val server = ThriftMux.serveIface("localhost:8080", iface)
 
   //server.announce("zk!localhost:2181!/testservice!1")
 
